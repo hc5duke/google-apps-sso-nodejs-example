@@ -101,7 +101,7 @@ app.get('/googlenav', function(req, res) {
 //the process by verifying the assertion.  If valid, the user will be
 //logged in.  Otherwise, authentication has failed.
 app.get('/auth/return/:id', function(req, res) {
-  passport.authenticate(req.params.id, { 
+  passport.authenticate(req.params.id, {
     successRedirect: '/',
     failureRedirect: '/' })(req, res);
 });
@@ -109,9 +109,9 @@ app.get('/auth/return/:id', function(req, res) {
 
 app.get('/', function(req, res){
   if(req.isAuthenticated()){
-    res.render("indexPrivate.html", {defs: config.defs, user: req.user, data: JSON.stringify(req.user) });    
+    res.render("indexPrivate.html", {defs: config.defs, user: req.user, data: JSON.stringify(req.user) });
   }else{
-    res.render("indexPublic.html",  {defs: config.defs});        
+    res.render("indexPublic.html",  {defs: config.defs});
   }
 });
 

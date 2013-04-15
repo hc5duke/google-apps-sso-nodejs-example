@@ -13,7 +13,7 @@
            For PAID editions, use seatCount in the shopping cart instead.
          <PurchaseUrl> - URL of your shopping web page. Use only when
            PaymentModel is PAID. &edition= is optional and is used to alert
-           your shopping page as to what sort of purchase is being requested. 
+           your shopping page as to what sort of purchase is being requested.
     -->
     <SubListing>
       <DisplayName>Standard Edition Free Unlimited</DisplayName>
